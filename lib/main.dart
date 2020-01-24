@@ -5,21 +5,20 @@ import 'rss_reader.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        // Define the default brightness and colors.
+        // Changed my theme to look more like a terminal. Colors defined in
+        // colors.dart
         brightness: Brightness.dark,
         primaryColor: colorHackerBackground,
         accentColor: colorHackerBorder,
 
-        // Define the default font family.
+        // Defining the default font family.
         fontFamily: 'roboto',
 
-        // Define the default TextTheme. Use this to specify the default
-        // text styling for headlines, titles, bodies of text, and more.
+        // Modifying the default TextTheme to help with my terminal design.
         primaryTextTheme: TextTheme(
           title: TextStyle(),
         ).apply(
